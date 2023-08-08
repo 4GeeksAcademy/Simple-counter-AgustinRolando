@@ -1,22 +1,15 @@
-import React, { useState, useEffect } from 'react';
-import CountdownTimer from './counter';
+import React, { useState } from "react";
+import CountdownTimer from "./counter";
 
-function Home() {
-    const [seconds, setSeconds] = useState(3434); 
 
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setSeconds(prevSeconds => prevSeconds + 1);
-        }, 1000);
+const Home = ({ numero1, numero2, numero3, numero4, numero5, numero6 }) => {
+  return (
 
-        return () => clearInterval(interval); 
-    }, []);
-
-    return (
-        <div>           
-            <CountdownTimer seconds={seconds} />
-        </div>
-    );
+    <div className="conteiner-full">
+     
+      <CountdownTimer numero1={numero1} numero2={numero2} numero3={numero3} numero4={numero4} numero5={numero5} numero6={numero6} />
+    </div>
+  )
 }
 
 export default Home;

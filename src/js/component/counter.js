@@ -1,18 +1,18 @@
 import React from 'react';
 
-function CountdownTimer(props) {
-    const timeString = String(props.seconds).padStart(6, '0');
+const CountdownTimer=({numero1, numero2,numero3, numero4, numero5, numero6})=> {
+    
 
     return (
-      <div className="d-flex bg-dark text-white p-3 justify-content-center">
-        <div className="bg-secondary rounded p-2 mr-2 mx-3 d-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}>
-          <i className="fa-regular fa-clock" style={{color: "#ffffff"}}></i>
-        </div>
-        {timeString.split('').map((digit, index) => (
-          <div key={index} className="bg-secondary rounded p-2 mr-2 mx-3 d-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }}>
-            {digit}
-          </div>
-        ))}
+      <div className="d-flex bg-dark text-white p-4 justify-content-center fw-bolder fs-3 contenedor">
+         <p><i class="fa-regular fa-clock reloj" ></i></p>
+         <div className="digits col text-white">{numero6}</div>
+         <div className="digits col text-white">{numero5}</div>
+         <div className="digits col text-white">{numero4}</div>
+         <div className="digits col text-white">{numero3}</div>
+         <div className="digits col text-white">{numero2}</div>
+         <div className="digits col text-white">{numero1}</div>
+       
       </div>
     );
 }

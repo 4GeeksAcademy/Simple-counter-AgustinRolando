@@ -10,8 +10,36 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
-.contador{
-    background-color: black;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.body {
+    margin-top:20px;
+}
+.container-full {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    border-radius:10px;
+    width:75%;
+    margin:0 auto;
+    background-color:black;
+}
+.digits {
+    height:85px;
+    width:85;
+    font-size:60px;
+    margin:10px;
+    text-align: center;
+    background-color: #2E2E2D;
+    border-radius:15px;
+}
+
+.reloj {
+    height:85px;
+    width:85;
+    font-size:60px;
+    margin:10px;
+    text-align: center;
+    background-color: #2E2E2D;
+    border-radius:15px;
+    padding-top: 10px;
+    
 }
