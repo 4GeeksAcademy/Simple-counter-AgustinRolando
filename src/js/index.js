@@ -8,5 +8,15 @@ import "../styles/index.css";
 //import your own components
 import Home from "./component/home.jsx";
 
-//render your react application
-ReactDOM.render(<Home />, document.querySelector("#app"));
+
+
+
+function displayHello() {
+    //render your react application
+    //            qué vamos a dibujar,    donde lo vamos a dibujar
+    ReactDOM.render(<Home /> ,  document.querySelector("#app"));
+
+}
+
+
+setInterval(displayHello, 1000);
